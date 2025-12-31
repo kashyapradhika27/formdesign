@@ -1,0 +1,393 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.login{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 10px;
+  height:100vh;
+  
+margin: 10px;
+}
+.login :nth-child(2){
+  align-items: center;
+  text-align: center;
+}
+.btngroup{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap:10px;
+}
+
+
+
+
+.btngroup .btn:nth-child(1){
+  padding:8px 66px 8px 66px;
+  background-color: rgb(188, 83, 188);
+  color:beige;
+  border-radius: 7px ;
+  border:  rgb(188, 83, 188);
+
+}
+.btngroup .btn:nth-child(2){
+  padding:8px 35px 8px 35px;
+  
+  
+  border-radius: 7px ;
+  border:  rgb(188, 83, 188);
+
+}
+.signin{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.signupform{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  
+
+
+}
+.forms{
+    position :relative;
+}
+
+.signupform :first-child{
+  display: flex;
+  
+  flex-direction: column;
+  padding-bottom: 10px;
+}
+.signupform :nth-child(2){
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  gap: 10px;
+
+}
+.forms div:nth-child(1) input{
+  outline: none;
+}
+
+.forms div:nth-child(1) label{
+  color:blue;
+  position: absolute;
+  font-size: 14px;
+  top:10px;
+  left:7px;
+  pointer-events: none;
+  transition: 0.2s ease all;
+}
+
+.forms div:nth-child(2) label{
+  color:blue;
+  position: absolute;
+   font-size: 14px;
+  top:72px;       
+  left:7px;
+  pointer-events: none;
+  transition: 0.3s ease all;
+  border: transparent;
+
+}
+
+
+.forms div:nth-child(1) input:focus + label,
+.forms div:nth-child(1) input:not(:placeholder-shown) + label {
+  top: -8px;
+  font-size: 12px;
+  color: #2f67b0;
+}
+
+.forms div:nth-child(2) input:focus + label,
+.forms div:nth-child(2) input:not(:placeholder-shown) + label {
+  top: 55px;  
+  font-size: 10px;
+   color: #2f67b0;
+  
+}
+.signupform :nth-child(2) input{
+  border: 1px;
+  padding: 13px 15px 13px 10px;
+  border-radius: 7px;
+  outline: none;
+  background: transparent;
+  background-color: #9e9b9b;
+}
+.signupform button{
+  gap:10px;
+  border:  grey;
+  padding: 13px 15px 13px 10px;
+  border-radius: 7px;
+  color:white;
+  margin-top:15px;
+   min-width: 200px;
+   
+   align-items: center;
+  background-color:rgba(202, 202, 202, 0.853);
+  
+}
+@media only screen  and (max-width:425px) {
+  .signupform > :first-child {
+  display: flex;
+  justify-content:flex-start;
+  align-items: flex-start;
+ text-align: left;
+  flex-direction: column;
+  padding: 20px 42px 20px 42px;
+  
+}
+.signupform >:nth-child(2)  {
+  display: flex;
+  justify-content: flex-start;
+  text-align: left;
+  flex-direction: column;
+  width:350px;
+}
+.signupform >:nth-child(3){
+   display: flex;
+  justify-content: flex-start;
+  text-align: left;
+  flex-direction: column;
+  width:350px;
+}
+
+}
+
+.loginform{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  gap:10px;
+  margin: 0 auto;
+  padding: 15px 0 15px 0;
+
+  
+  
+
+
+}
+.loginforms {
+  position: relative;
+  margin-top: 17px;
+  gap:25px;
+  
+
+
+}
+
+ 
+
+
+.loginforms div:nth-child(1) label{
+  position: absolute;
+  top:10px;
+  left:10px;
+  pointer-events: none;
+  transition: 0.2s ease all;
+  
+}
+.loginforms div:nth-child(2) label{
+  position: absolute;
+  top:68px;
+  left:10px;
+  pointer-events: none;
+  transition: 0.2s ease all;
+  
+}
+.loginforms div:nth-child(3) label{
+  position: absolute;
+  pointer-events: none;
+  transition: 0.2s ease all;
+  top: 130px;
+  left:10px;
+  
+}
+.loginforms div:nth-child(4) label{
+  position: absolute;
+  top:185px;
+  left:10px;
+  pointer-events: none;
+  transition: 0.2s ease all;
+}
+.loginforms div:nth-child(5) label{
+  position: absolute;
+  top:245px;
+  left:10px;
+  pointer-events: none;
+  transition: 0.2s ease all;
+
+}
+
+
+.loginforms div:nth-child(1) input:focus + label,
+.loginforms div:nth-child(1) input:not(:placeholder-shown) + label {
+  top: -8px;
+  font-size: 12px;
+  color: hsl(214, 58%, 44%);
+}
+.loginforms div:nth-child(1) input:focus,
+.loginforms div:nth-child(1) input:valid {
+    border: none !important;
+    outline: none !important;
+}
+.loginforms div:nth-child(2) input:focus + label,
+.loginforms div:nth-child(2) input:valid + label{
+  top: 49px;
+  font-size: 12px;
+   color: #2f67b0;
+}
+.loginforms div:nth-child(2) input:focus,
+.loginforms div:nth-child(2) input:valid {
+    border: none !important;
+    outline: none !important;
+}
+
+.loginforms div:nth-child(3) input:focus + label,
+.loginforms div:nth-child(3) input:valid + label{
+  top: 107px;
+  font-size: 12px;
+   color: #2f67b0;
+}
+.loginforms div:nth-child(3) input:focus,
+.loginforms div:nth-child(3) input:valid {
+    border: none !important;
+    outline: none !important;
+}
+.loginforms div:nth-child(4) input:focus + label,
+.loginforms div:nth-child(4) input:valid + label {
+  top: 168px;  
+  font-size: 10px;
+  color: #2f67b0;
+}
+.loginforms div:nth-child(4) input:focus,
+.loginforms div:nth-child(4) input:valid {
+    border: none !important;
+    outline: none !important;
+}
+.loginforms div:nth-child(5) input:focus + label,
+.loginforms div:nth-child(5) input:valid + label {
+   top:225px; 
+  font-size: 10px;
+  color: #2f67b0;
+ 
+}
+.loginforms div:nth-child(5) input:focus,
+.loginforms div:nth-child(5) input:valid {
+    border: none !important;
+    outline: none !important;
+}
+
+.loginform :first-child(1){
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+.loginform :nth-child(2){
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  gap: 10px;
+
+}
+.loginform :nth-child(2) label{
+  color:blue;
+  display: flex;
+  
+  
+}
+
+
+.loginforms input[type="text"],
+.loginforms input[type="email"],
+.loginforms input[type="number"],
+.loginforms input[type="password"]{
+  border: 1px solid rgb(158, 154, 154);
+  padding: 15px 20px;
+  border-radius: 10px;
+  width: 90%;
+}
+
+
+.loginforms input[type="radio"]{
+  width: 30px;
+  height: 16px;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  accent-color: #6a5acd;   }
+
+.loginforms div button{
+  background-color: purple;
+}  
+
+.loginforms .radiogroup{
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.loginforms .radiogroup label{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+}
+
+.loginforms .radiogroup input[type="radio"]{
+  width: 16px;
+  height: 16px;
+}
+
+
+
+
+
+
+
+.loginform button{
+  gap:10px;
+  border:  grey;
+  padding: 13px 40px 13px 40px;
+  border-radius: 7px;
+  color:white;
+  margin-top:15px;
+   min-width: 270px;
+   margin-top: 100px;
+  background-color:rgba(202, 202, 202, 0.853);
+  
+}
+
+
+
+
+
+
+
+
+
+
+
